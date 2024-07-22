@@ -6,7 +6,6 @@
 
 # Ignore composer.lock and composer.json
 composer.lock
-composer.json
 
 # Ignore phpstan.neon and phpcs.xml
 phpstan.neon
