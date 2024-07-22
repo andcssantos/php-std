@@ -1,0 +1,16 @@
+# Ignore vendor directory
+/vendor/
+
+# Ignore .github directory
+.github/
+
+# Ignore composer.lock and composer.json
+composer.lock
+composer.json
+
+# Ignore phpstan.neon and phpcs.xml
+phpstan.neon
+phpcs.xml
+
+# Ignore .env
+.env

@@ -1,0 +1,29 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - tests
+
+    # Exclude specific files or directories if needed
+    excludePaths:
+        - %currentWorkingDirectory%/vendor
+
+    # Define bootstrap files if needed
+    bootstrapFiles:
+        - %currentWorkingDirectory%/vendor/autoload.php
+
+    # Define additional rules or extensions
+    scanFiles:
+        - %currentWorkingDirectory%/tests/index.php
+
+    # Define specific settings for certain checks
+    checkMissingIterableValueType: true
+    checkGenericClassInNonGenericObjectType: true
+    checkUnionTypes: true
+    checkExplicitMixed: true
+    checkMissingTypehints: true
+    checkUninitializedProperties: true
+    checkDynamicProperties: true
+
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
