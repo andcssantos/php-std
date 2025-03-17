@@ -1,4 +1,4 @@
 <?php
 require_once '../index.php';
 
-// adiciona novo comentáriasdsadsadao  asdsadas
+// adiciona novo comentasd asds sadsad
