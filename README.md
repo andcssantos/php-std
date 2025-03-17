@@ -3,3 +3,4 @@ PHPStd is a Framework for PHP 8.2. It is a simple and easy-to-use framework that
 TESTE
 ADSADSADSAD
 ADSADSAD
+adsasdada
