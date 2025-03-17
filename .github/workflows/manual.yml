@@ -18,5 +18,5 @@ jobs:
         uses: actions/add-to-project@v1
         with:
           project-url: "https://github.com/users/andcssantos/projects/4"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          status: "Revision" # Nome exato da coluna do GitHub Project
+          github-token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          status: "Revison" # Nome exato da coluna do GitHub Project
