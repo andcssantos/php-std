@@ -1,8 +1,6 @@
 # Ignore vendor directory
 /vendor/
 
-# Ignore .github directory
-.github/
 
 # Ignore composer.lock and composer.json
 composer.lock
