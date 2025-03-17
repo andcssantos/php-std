@@ -14,9 +14,10 @@ jobs:
   move-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Move issue to Review
+      - name: Move issue #8 to Review
         uses: actions/add-to-project@v1
         with:
-          project-url: "https://github.com/users/andcssantos/projects/4"
+          project-url: "https://github.com/users/andcssantos/projects/4"  # URL do seu GitHub Project
           github-token: ${{ secrets.GH_PERSONAL_TOKEN }}
-          status: "Review" # Certifique-se de que o nome da coluna está correto
+          issue-number: 8  # Número do Issue que você quer mover
+          status: "Review"  # Nome exato da coluna de destino (Review)
