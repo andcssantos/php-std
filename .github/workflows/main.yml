@@ -1,0 +1,22 @@
+name: Move Issue to Review on Commit
+on:
+  push:
+    branches:
+      - main # Alterar para sua branch principal
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  projects: write # Corrigido!
+
+jobs:
+  move-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move issue to Review
+        uses: actions/add-to-project@v1
+        with:
+          project-url: "https://github.com/users/andcssantos/projects/4"
+          github-token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          status: "Revison" # Nome exato da coluna do GitHub Project
