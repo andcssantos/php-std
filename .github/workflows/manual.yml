@@ -1,8 +1,14 @@
 name: Move Issue to Review on Commit
 on:
-  push: # Dispara quando um commit é enviado
+  push:
     branches:
       - main # Alterar para sua branch principal
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  projects: write # Corrigido!
 
 jobs:
   move-issue:
